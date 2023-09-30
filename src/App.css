@@ -1,38 +1,124 @@
-.App {
+/* Reset some default styles for better consistency across browsers */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+
+
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
   text-align: center;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  text-align: center;
+  color: #2c3e50;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  margin-top: 30PX;
+  margin-bottom: 40px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 400px;
+  /* Set a maximum width if needed */
+  height: 40px;
+  /* Set the desired height */
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+
+  /* Add some space between the input and button */
+  /* Center the input within the container */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.task {
+
+
+  margin-bottom: 10px;
+
+  border-radius: 4px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+.task-content {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+  justify-content: flex-start;
+  /* Distribute space evenly between children */
+  margin: 0;
+  /* Add this to reset default margin */
 }
 
-.App-link {
-  color: #61dafb;
+
+.task-content span {
+  /* Add styles for the task content */
+  font-size: 18px;
+  color: #333;
+  display: block;
+  /* Ensure span takes up full width */
+  margin: 0;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-buttons {
+  display: flex;
+  /* Use flex to control alignment */
+  align-items: center;
+  /* Vertically center the buttons */
+  margin: 0;
+  /* Add this to reset default margin */
+
 }
