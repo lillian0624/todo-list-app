@@ -24,6 +24,10 @@ const TodoList = () => {
     setTasks(updatedTasks);
   };
 
+  const completeTask = (taskId) => {
+    console.log("Complete task with id", taskId);
+  };
+
   return (
     <div>
       <h1>TodoList</h1>
@@ -44,6 +48,7 @@ const TodoList = () => {
             task={task}
             onDelete={deleteTask}
             onUpdate={updateTask}
+            onComplete={completeTask}
           />
         ))}
       </div>
