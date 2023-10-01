@@ -1,6 +1,5 @@
 # React Todo List App
-
-Welcome to the React Todo List App! This simple yet powerful Todo List application is built using React, providing users with an intuitive interface to manage their tasks efficiently.
+This simple yet powerful Todo List application is built using React, providing users with an intuitive interface to manage their tasks efficiently.
 
 ![Todo List App](https://github.com/lillian0624/todo-list-app/assets/87347776/59654b0f-10cb-45bf-904b-2c17f5c8357e)
 
