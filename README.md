@@ -30,6 +30,7 @@ This simple yet powerful Todo List application is built using React, providing u
   - Event Handling
   - Props
   - Functional Components
+  - Spread Operator
 
 - **CSS:**
   - Dynamic Styling to ensure a clean and user-friendly experience.
