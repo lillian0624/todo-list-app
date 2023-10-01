@@ -84,8 +84,12 @@ button:hover {
 
 }
 
+.completed {
+  background-color: rgb(82, 225, 113);
+}
+
 .task-content {
-  flex-grow: 1;
+
   width: 100%;
   max-width: 400px;
   height: 40px;

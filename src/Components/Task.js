@@ -18,7 +18,7 @@ const Task = ({ task, onDelete, onUpdate, onComplete }) => {
   const handleComplete = (taskId) => {
     setIsCompleted(true);
 
-    onComplete(task.id);
+    onComplete(task.id); // Call the onComplete function with the task id
   };
 
   return (
@@ -38,15 +38,19 @@ const Task = ({ task, onDelete, onUpdate, onComplete }) => {
         )}
       </div>
       <div className="task-buttons">
-        <button onClick={handleEdit} disabled={isCompleted}>
-          Edit
-        </button>
+        {!isCompleted && (
+          <button onClick={handleEdit} disabled={isCompleted}>
+            Edit
+          </button>
+        )}
         <button onClick={() => onDelete(task.id)} disabled={isCompleted}>
           Delete
         </button>
-        <button onClick={handleComplete} disabled={isCompleted}>
-          Complete
-        </button>
+        {!isCompleted && (
+          <button onClick={handleComplete} disabled={isCompleted}>
+            Complete
+          </button>
+        )}
       </div>
     </div>
   );
